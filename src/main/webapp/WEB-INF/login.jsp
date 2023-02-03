@@ -21,13 +21,13 @@
 <%--%>--%>
 
 <%-- JSTL Solution --%>
-<c:if test="${pageContext.request.method.equalsIgnoreCase('post')}">
-    <c:if test="${param.username == 'admin' && param.password == 'password'}">
-        <c:redirect url="/profile.jsp" />
-    </c:if>
-</c:if>
+<%--<c:if test="${pageContext.request.method.equalsIgnoreCase('post')}">--%>
+<%--    <c:if test="${param.username == 'admin' && param.password == 'password'}">--%>
+<%--        <c:redirect url="/WEB-INF/profile.jsp" />--%>
+<%--    </c:if>--%>
+<%--</c:if>--%>
 
-<form action="login.jsp" method="post">
+<form action="login" method="post">
     <label for="username">Username:</label>
     <input type="text" placeholder="Username" name="username" id="username" required />
     <label for="password">Password:</label>
